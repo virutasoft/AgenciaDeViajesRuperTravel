@@ -42,6 +42,10 @@ html{
     }
 }
 
+section{
+    padding: 3rem 9%;
+}
+
 body{
     background: $black;
     overflow-x: hidden;
@@ -112,6 +116,60 @@ body{
     display: none;
 }
 
+// HOME SECTION STARTS
+.home{
+    margin: 0 auto;
+    // margin-top: 9rem; //change the value to 0 or comment to remove the margin
+    // width: 90%; //change the model to view in full screen
+    width: 100%; //change the model to view in full screen
+    border-radius: 1rem;
+    background: linear-gradient($black-bg, $black-bg), url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+
+    .content{
+        text-align: center;
+
+        span{
+            font-weight: bolder;
+            color: transparent;
+            -webkit-text-stroke: .1rem $white;
+            font-size: 4vw;
+            display: block;
+        }
+
+        h3{
+            font-size: 6vw;
+            color: $white;
+        }
+
+        p{
+            max-width: 60rem;
+            margin: 1rem auto;
+            font-size: 1.4rem;
+            color: $light-color;
+            line-height: 2;
+
+        }
+    }
+
+}
+// HOME SECTION ENDS
+
+
+
+
+
+
+
+
+
 
 
 
@@ -131,6 +189,9 @@ body{
     }
     .header{
         padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 3rem 2rem;
     }
 }
 
@@ -161,6 +222,21 @@ body{
                 display: block;
             }
         }
+    }
+
+    .home{
+        margin-top: 10rem;
+
+        .content{
+            span{
+                font-size: 8vw;
+            }
+
+            h3{
+                font-size: 9vw;
+            }
+        }
+
     }
 }
 
