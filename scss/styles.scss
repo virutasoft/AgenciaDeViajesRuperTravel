@@ -207,6 +207,69 @@ body{
 }
 // FORM BOOKING  SECTION ENDS
 
+// ABOUT  SECTION STARTS
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 5rem;
+
+    .video-container{
+        flex: 1 1 50rem;
+
+        video{
+            border-radius: 1rem;
+            width: 100%;
+        }
+        .controls{
+            text-align: center;
+            padding: 2rem 0;
+
+            span{
+                display: inline-block;
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+                background: $white;
+                cursor: pointer;
+                margin: 1rem;
+
+                &:hover{
+                    background: $blue;
+                }
+            }
+        }
+    }
+
+    .content{
+        flex: 1 1 42rem;
+        margin-bottom: 5rem;
+
+        span{
+            color: $blue;
+            font-size: 2rem;
+        }
+        h3{
+            color: $white;
+            font-size: 4rem;
+            margin-top: .5rem;
+
+
+        }
+
+        p{
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            color: $light-color;
+            line-height: 2;
+
+        }
+        
+    }
+}
+// ABOUT  SECTION ENDS
+
 
 
 
@@ -293,6 +356,17 @@ body{
         font-size: 50%;
 
     }
+
+    .about .content h3{
+        font-size: 3.5rem;
+    }
+
+    .about .content .btn{
+        width: 90vw;
+        justify-content: center;
+        text-align: center;
+    }
+
 
 }
 // BREAKPOINTS
