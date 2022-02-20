@@ -19,6 +19,7 @@ $light-color: rgb(210, 210, 210);
 $bg-color: #222;
 $black-bg:rgba(17,17,17,.7);
 $border:.2rem solid $blue;
+$shadow: rgba(17, 17, 17, .3);
 
 html{
     font-size: 62.5%;
@@ -162,6 +163,49 @@ body{
 }
 // HOME SECTION ENDS
 
+// FORM BOOKING  SECTION STARTS
+.book-form{
+    width: 80%;
+    margin: 1rem auto;
+    margin-top: -5rem;
+    background: $bg-color;
+    border-radius: 10rem;
+    box-shadow: $shadow;
+    padding: 3rem 2rem;
+    
+    form{
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .inputBox{
+            flex: 1 1 25rem;
+
+            span{
+                font-size: 1.4rem;
+                color: $light-color;
+            }
+
+            input{
+                width: 100%;
+                padding: 1.2rem 1.4rem;
+                border-radius: 5rem;
+                border: $border;
+                font-size: 1.6rem;
+                color: $white;
+                text-transform: none;
+                background: none;
+                margin-top: 1rem;
+            }
+        }
+
+        .btn{
+            flex: 1 1 15rem;
+        }
+    }
+}
+// FORM BOOKING  SECTION ENDS
 
 
 
@@ -192,6 +236,9 @@ body{
     }
     section{
         padding: 3rem 2rem;
+    }
+    .book-form{
+        border-radius: 5rem;
     }
 }
 
